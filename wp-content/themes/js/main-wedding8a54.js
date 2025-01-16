@@ -2,6 +2,7 @@
 
 //AOS ANIMATION
 AOS.init();
+
 // SCROLLREVEA
 var swiper1 = new Swiper(".album-slide", {
     effect: "coverflow",
@@ -29,7 +30,7 @@ Fancybox.bind("[data-fancybox]", {
 //AUDIO
 $(".toggleAudio").on("click", function () {
     let icon = $(this).find("i");
-    icon.toggleClass("ri-volume-mute-fill ri-volume-up-fill"); // Chuyển đổi giữa 2 class
+    icon.toggleClass("ri-volume-mute-fill ri-volume-up-fill");
     let audio = $("#audio")[0];
     audio.paused ? audio.play() : audio.pause();
 });
