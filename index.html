@@ -74,9 +74,9 @@
             z-index: 9999;
         }
 
-        /* body::-webkit-scrollbar {
+        body::-webkit-scrollbar {
             display: none;
-        } */
+        }
 
         body {
             --wp--preset--color--black: #000000;
@@ -1706,7 +1706,7 @@
         </i>
     </button>
     <!-- END AUDIO -->
-
+    <!-- 
     <script>
         document.body.style.overflow = 'hidden';
 
@@ -1731,103 +1731,6 @@
         });
 
         document.addEventListener('DOMContentLoaded', function () {
-            const imageUrls = [
-                // bg
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/audio/ido.mp3',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9267.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8430.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/0.jpg',
-                // vid
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/video/propose.mp4',
-                // album 1
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8309.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9629.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8577.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8728.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8867.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8742.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8979.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8924.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9001.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9043.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9255.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9616.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9514.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9362.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9554.jpg',
-                // album 2
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9394.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9736.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9541.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9205.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9289.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9067.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8968.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9134.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9473.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8659.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8829.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9570.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9716.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9648.jpg',
-                'https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9704.jpg',
-            ];
-
-            let currentIndex = 0;
-            let isLazyLoading = false;
-            let isPaused = false;
-
-            function loadNextImage() {
-                if (isPaused || isLazyLoading || currentIndex >= imageUrls.length) {
-                    return;
-                }
-
-                const img = new Image();
-                const currentUrl = imageUrls[currentIndex];
-
-                img.src = currentUrl;
-                console.log(`Starting to load: ${currentUrl}`);
-
-                img.onload = () => {
-                    console.log(`Loaded: ${currentUrl}`);
-                    currentIndex++;
-
-                    if (!isPaused && !isLazyLoading) {
-                        loadNextImage();
-                    }
-                };
-
-                img.onerror = () => {
-                    console.error(`Failed to load: ${currentUrl}`);
-                    currentIndex++;
-
-                    if (!isPaused && !isLazyLoading) {
-                        loadNextImage();
-                    }
-                };
-            }
-
-            const lazyElements = document.querySelectorAll(".lazy, .lazyload, .lazy-bg, video[data-poster]");
-
-            if ("IntersectionObserver" in window) {
-                const lazyObserver = new IntersectionObserver((entries) => {
-                    isLazyLoading = entries.some((entry) => entry.isIntersecting);
-
-                    if (isLazyLoading) {
-                        console.log("Lazy load active. Pausing image loading.");
-                        isPaused = true;
-                    } else {
-                        console.log("Lazy load finished. Resuming image loading.");
-                        isPaused = false;
-                        loadNextImage();
-                    }
-                });
-
-                lazyElements.forEach((el) => lazyObserver.observe(el));
-            }
-
-            loadNextImage();
-
             const backgroundAudio = document.getElementById('audio');
             const videos = document.querySelectorAll('video');
             const toggleAudioBtn = document.querySelector('.toggleAudio');
@@ -2038,6 +1941,120 @@
                 $(document).on("scroll", lazyload);
                 $(window).on("resize", lazyload);
             }
+        });
+    </script> -->
+    <script>
+        document.body.style.overflow = 'hidden';
+
+        const startBtn = document.getElementById('startButton');
+        const audio = document.getElementById('audio');
+        const welcomeModal = document.getElementById('welcome-modal');
+        const toggleAudioBtn = document.querySelector('.toggleAudio');
+        const toggleIcon = toggleAudioBtn?.querySelector('i');
+
+        if (startBtn) {
+            startBtn.addEventListener('click', () => {
+                audio?.play();
+                if (welcomeModal) welcomeModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+        }
+
+        window.addEventListener('load', () => setTimeout(() => window.scrollTo(0, 0), 0));
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const videos = document.querySelectorAll('video');
+
+            const updateAudioIcon = (isMuted) => {
+                toggleIcon?.classList.toggle('ri-volume-mute-fill', isMuted);
+                toggleIcon?.classList.toggle('ri-volume-up-fill', !isMuted);
+            };
+
+            videos.forEach((video) => {
+                video.addEventListener('play', () => {
+                    toggleAudioBtn.disabled = true;
+                    audio?.pause();
+                    updateAudioIcon(true);
+                });
+
+                video.addEventListener('pause', () => {
+                    toggleAudioBtn.disabled = false;
+                    audio?.play();
+                    updateAudioIcon(false);
+                });
+
+                video.addEventListener('ended', () => {
+                    toggleAudioBtn.disabled = false;
+                    audio?.play();
+                    updateAudioIcon(false);
+                });
+            });
+
+            if (window.location.hash) {
+                window.history.replaceState(null, null, window.location.pathname);
+            }
+
+            // Lazy loading for backgrounds
+            const lazyLoad = (elements, observerConfig, callback) => {
+                if ('IntersectionObserver' in window) {
+                    const observer = new IntersectionObserver((entries, observer) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                callback(entry.target);
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, observerConfig);
+
+                    elements.forEach((element) => observer.observe(element));
+                } else {
+                    const fallback = () => {
+                        const scrollTop = window.scrollY;
+                        const windowHeight = window.innerHeight;
+
+                        elements.forEach((element) => {
+                            if (element.getBoundingClientRect().top < windowHeight + scrollTop + 500) {
+                                callback(element);
+                            }
+                        });
+                    };
+
+                    window.addEventListener('scroll', fallback);
+                    window.addEventListener('resize', fallback);
+                }
+            };
+
+            lazyLoad(
+                document.querySelectorAll('.lazy-bg'),
+                { rootMargin: '0px 0px 500px 0px' },
+                (element) => {
+                    const bgUrl = element.dataset.bg;
+                    if (bgUrl) element.style.backgroundImage = `url(${bgUrl})`;
+                    element.classList.remove('lazy-bg');
+                }
+            );
+
+            lazyLoad(
+                document.querySelectorAll('video[data-poster]'),
+                { rootMargin: '0px 0px 500px 0px' },
+                (video) => {
+                    const posterUrl = video.dataset.poster;
+                    if (posterUrl) video.poster = posterUrl;
+                    video.removeAttribute('data-poster');
+                }
+            );
+
+            lazyLoad(
+                document.querySelectorAll('.lazy'),
+                { rootMargin: '0px 0px 500px 0px' },
+                (picture) => {
+                    const source = picture.querySelector('source');
+                    const img = picture.querySelector('img');
+                    if (source) source.srcset = source.dataset.srcset;
+                    if (img) img.src = img.dataset.src;
+                    picture.classList.remove('lazy');
+                }
+            );
         });
     </script>
 
