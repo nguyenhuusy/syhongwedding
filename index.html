@@ -1706,243 +1706,7 @@
         </i>
     </button>
     <!-- END AUDIO -->
-    <!-- 
-    <script>
-        document.body.style.overflow = 'hidden';
 
-        var startBtn = document.getElementById('startButton');
-
-        if (startBtn) {
-            startBtn.addEventListener('click', function () {
-                var audio = document.getElementById('audio');
-                if (audio) audio.play();
-
-                var welcomeModal = document.getElementById('welcome-modal');
-                if (welcomeModal) welcomeModal.style.display = 'none';
-
-                document.body.style.overflow = 'auto';
-            });
-        }
-
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                window.scrollTo(0, 0);
-            }, 0);
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const backgroundAudio = document.getElementById('audio');
-            const videos = document.querySelectorAll('video');
-            const toggleAudioBtn = document.querySelector('.toggleAudio');
-            const toggleIcon = toggleAudioBtn.querySelector('i');
-
-            function forceIconVolumeUp() {
-                toggleIcon.classList.remove('ri-volume-mute-fill');
-                toggleIcon.classList.add('ri-volume-up-fill');
-            }
-
-            videos.forEach(video => {
-                video.addEventListener('play', function () {
-                    toggleAudioBtn.disabled = true;
-                    backgroundAudio.pause();
-                    forceIconVolumeUp();
-                });
-
-                video.addEventListener('pause', function () {
-                    toggleAudioBtn.disabled = false;
-                    backgroundAudio.play();
-                    forceIconVolumeUp();
-                });
-
-                video.addEventListener('ended', function () {
-                    toggleAudioBtn.disabled = false;
-                    backgroundAudio.play();
-                    forceIconVolumeUp();
-                });
-            });
-
-            if (window.location.hash) {
-                window.history.replaceState(null, null, window.location.origin + window.location.pathname);
-            }
-
-            var lazyBackgrounds = document.querySelectorAll('.lazy-bg');
-
-            if ('IntersectionObserver' in window) {
-                var lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            var lazyBackground = entry.target;
-                            var bgUrl = lazyBackground.dataset.bg;
-
-                            if (bgUrl) {
-                                lazyBackground.style.backgroundImage = `url(${bgUrl})`;
-                            }
-
-                            lazyBackground.classList.remove('lazy-bg');
-                            lazyBackgroundObserver.unobserve(lazyBackground);
-                        }
-                    });
-                }, {
-                    rootMargin: '0px 0px 500px 0px'
-                });
-
-                lazyBackgrounds.forEach(function (lazyBackground) {
-                    lazyBackgroundObserver.observe(lazyBackground);
-                });
-            } else {
-                var lazyLoadFallback = function () {
-                    var scrollTop = window.scrollY;
-                    var windowHeight = window.innerHeight;
-
-                    lazyBackgrounds.forEach(function (lazyBackground) {
-                        var rect = lazyBackground.getBoundingClientRect();
-
-                        if (rect.top < windowHeight + scrollTop + 500) {
-                            var bgUrl = lazyBackground.dataset.bg;
-
-                            if (bgUrl) {
-                                lazyBackground.style.backgroundImage = `url(${bgUrl})`;
-                            }
-
-                            lazyBackground.classList.remove('lazy-bg');
-                        }
-                    });
-
-                    lazyBackgrounds = document.querySelectorAll('.lazy-bg');
-                };
-
-                window.addEventListener('scroll', lazyLoadFallback);
-                window.addEventListener('resize', lazyLoadFallback);
-            }
-
-            const lazyVideos = document.querySelectorAll('video[data-poster]');
-
-            if ('IntersectionObserver' in window) {
-                const videoObserver = new IntersectionObserver(function (entries, observer) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            const video = entry.target;
-                            const posterUrl = video.dataset.poster;
-
-                            if (posterUrl) {
-                                video.poster = posterUrl;
-                            }
-
-                            video.removeAttribute('data-poster');
-                            videoObserver.unobserve(video);
-                        }
-                    });
-                }, {
-                    rootMargin: '0px 0px 500px 0px'
-                });
-
-                lazyVideos.forEach(function (video) {
-                    videoObserver.observe(video);
-                });
-            } else {
-                const lazyLoadFallback = () => {
-                    const scrollTop = window.scrollY;
-                    const windowHeight = window.innerHeight;
-
-                    lazyVideos.forEach((video) => {
-                        const rect = video.getBoundingClientRect();
-
-                        if (rect.top < windowHeight + scrollTop + 500) {
-                            const posterUrl = video.dataset.poster;
-
-                            if (posterUrl) {
-                                video.poster = posterUrl;
-                            }
-
-                            video.removeAttribute('data-poster');
-                        }
-                    });
-
-                    lazyVideos = document.querySelectorAll('video[data-poster]');
-                };
-
-                window.addEventListener('scroll', lazyLoadFallback);
-                window.addEventListener('resize', lazyLoadFallback);
-            }
-        });
-
-        $(document).ready(function () {
-            var lazyloadPictures;
-
-            if ("IntersectionObserver" in window) {
-                lazyloadPictures = document.querySelectorAll(".lazy");
-
-                var pictureObserver = new IntersectionObserver(function (entries, observer) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            var picture = entry.target;
-                            var source = picture.querySelector("source");
-                            var img = picture.querySelector("img");
-
-                            if (source && source.dataset.srcset) {
-                                source.srcset = source.dataset.srcset;
-                            }
-
-                            if (img && img.dataset.src) {
-                                img.src = img.dataset.src;
-                            }
-
-                            picture.classList.remove("lazy");
-                            pictureObserver.unobserve(picture);
-                        }
-                    });
-                }, {
-                    root: document.querySelector("#container"),
-                    rootMargin: "0px 0px 500px 0px"
-                });
-
-                lazyloadPictures.forEach(function (picture) {
-                    pictureObserver.observe(picture);
-                });
-            } else {
-                var lazyloadThrottleTimeout;
-
-                lazyloadPictures = $(".lazy");
-
-                function lazyload() {
-                    if (lazyloadThrottleTimeout) {
-                        clearTimeout(lazyloadThrottleTimeout);
-                    }
-
-                    lazyloadThrottleTimeout = setTimeout(function () {
-                        var scrollTop = $(window).scrollTop();
-
-                        lazyloadPictures.each(function () {
-                            var el = $(this);
-                            var source = el.find("source");
-                            var img = el.find("img");
-
-                            if (el.offset().top < window.innerHeight + scrollTop + 500) {
-                                if (source && source.data("srcset")) {
-                                    source.attr("srcset", source.data("srcset"));
-                                }
-
-                                if (img && img.data("src")) {
-                                    img.attr("src", img.data("src"));
-                                }
-
-                                el.removeClass("lazy");
-                                lazyloadPictures = $(".lazy");
-                            }
-                        });
-
-                        if (lazyloadPictures.length == 0) {
-                            $(document).off("scroll");
-                            $(window).off("resize");
-                        }
-                    }, 20);
-                }
-
-                $(document).on("scroll", lazyload);
-                $(window).on("resize", lazyload);
-            }
-        });
-    </script> -->
     <script>
         document.body.style.overflow = 'hidden';
 
@@ -1955,7 +1719,9 @@
         if (startBtn) {
             startBtn.addEventListener('click', () => {
                 audio?.play();
+                
                 if (welcomeModal) welcomeModal.style.display = 'none';
+
                 document.body.style.overflow = 'auto';
             });
         }
@@ -2029,7 +1795,9 @@
                 { rootMargin: '0px 0px 500px 0px' },
                 (element) => {
                     const bgUrl = element.dataset.bg;
+
                     if (bgUrl) element.style.backgroundImage = `url(${bgUrl})`;
+
                     element.classList.remove('lazy-bg');
                 }
             );
@@ -2039,7 +1807,9 @@
                 { rootMargin: '0px 0px 500px 0px' },
                 (video) => {
                     const posterUrl = video.dataset.poster;
+
                     if (posterUrl) video.poster = posterUrl;
+
                     video.removeAttribute('data-poster');
                 }
             );
@@ -2050,8 +1820,10 @@
                 (picture) => {
                     const source = picture.querySelector('source');
                     const img = picture.querySelector('img');
+
                     if (source) source.srcset = source.dataset.srcset;
                     if (img) img.src = img.dataset.src;
+
                     picture.classList.remove('lazy');
                 }
             );
