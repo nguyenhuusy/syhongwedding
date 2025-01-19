@@ -468,12 +468,8 @@
     <!-- HEADER -->
     <header>
         <section id="banner" class="bg_overlay">
-            <picture>
-                <source srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9115.webp"
-                    type="image/webp">
-                <img src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9115.jpg" alt=""
-                    class="banner-bg img_bg banner_top" style="background-position:center center;">
-            </picture>
+            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9115.webp" alt=""
+                class="banner-bg img_bg banner_top lazyload" style="background-position:center center;">
 
             <div class="container">
                 <div class="banner-container">
@@ -563,13 +559,8 @@
             <div class="about-container">
                 <div class="about-card" style="order:1">
                     <div class="about-media">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9451.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9451.jpg" alt=""
-                                class="bride_img lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9451.webp" alt=""
+                            class="bride_img lazyload">
                     </div>
 
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
@@ -600,13 +591,8 @@
 
                 <div class="about-card" style="order:2">
                     <div class="about-media">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9636.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9636.jpg" alt=""
-                                class="groom_img lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9636.webp" alt=""
+                            class="groom_img lazyload">
                     </div>
 
                     <div class="about-body" data-aos="fade-up" data-aos-duration="3000">
@@ -643,8 +629,9 @@
     <section id="countdown-section" class="">
         <div class="container">
             <!-- COUNTDOWN -->
-            <div class="count-down section-countdown img_bg bg_overlay lazy-bg"
-                data-bg="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9267.jpg">
+            <div class="count-down section-countdown img_bg bg_overlay lazyload"
+                data-bg="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9267.webp"
+                style="background-image: none;">
                 <p class="subtitle">
                     We are starting the countdown
                 </p>
@@ -711,13 +698,8 @@
             <div class="invitation">
                 <div class="invitation-container">
                     <div class="invitation-card">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9667.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9667.jpg" alt=""
-                                class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9667.webp" alt=""
+                            class="lazyload">
 
                         <h3 class="card-title uk-margin-remove">
                             At Home
@@ -779,13 +761,8 @@
             <div class="invitation">
                 <div class="invitation-container">
                     <div class="invitation-card">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8772.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8772.jpg" alt=""
-                                class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8772.webp" alt=""
+                            class="lazyload">
 
                         <h3 class="card-title uk-margin-remove">
                             At Home
@@ -870,7 +847,7 @@
 
                                 <div>
                                     <div class="dress-media uk-text-right uk-margin-right">
-                                        <img src="wp-content/pic/1.png" alt="">
+                                        <img data-src="wp-content/pic/1.png" alt="" class="lazyload">
                                     </div>
                                 </div>
 
@@ -897,7 +874,7 @@
 
                                 <div>
                                     <div class="dress-media uk-text-right uk-margin-right">
-                                        <img src="wp-content/pic/2.png" alt="">
+                                        <img data-src="wp-content/pic/2.png" alt="" class="lazyload">
                                     </div>
                                 </div>
 
@@ -924,7 +901,7 @@
 
                                 <div>
                                     <div class="dress-media uk-text-right uk-margin-right">
-                                        <img src="wp-content/pic/3.png" alt="">
+                                        <img data-src="wp-content/pic/3.png" alt="" class="lazyload">
                                     </div>
                                 </div>
 
@@ -951,7 +928,7 @@
 
                                 <div>
                                     <div class="dress-media uk-text-right uk-margin-right">
-                                        <img src="wp-content/pic/4.png" alt="">
+                                        <img data-src="wp-content/pic/4.png" alt="" class="lazyload">
                                     </div>
                                 </div>
 
@@ -976,8 +953,8 @@
     <!-- END DRESS CODE -->
 
     <!-- TIMELINE -->
-    <section id="time-line" class="time-line-section img_bg bg_overlay lazy-bg"
-        data-bg="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8430.jpg">
+    <section id="time-line" class="time-line-section img_bg bg_overlay lazyload"
+        data-bg="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8430.webp" style="background-image: none;">
         <div class="time-line container">
             <div class="section-heading">
                 <p class="subtitle">
@@ -991,13 +968,8 @@
             <div class="timeline-list">
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="timeline-media">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/2020.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2020.jpg" alt=""
-                                class="timline-img lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2020.webp" alt=""
+                            class="timline-img lazyload">
                     </div>
 
                     <div class="timeline-body">
@@ -1017,13 +989,8 @@
 
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="timeline-media">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/2021.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2021.jpg" alt=""
-                                class="timline-img lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2021.webp" alt=""
+                            class="timline-img lazyload">
                     </div>
 
                     <div class="timeline-body">
@@ -1043,13 +1010,8 @@
 
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="timeline-media">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/2022.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2022.jpg" alt=""
-                                class="timline-img lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2022.webp" alt=""
+                            class="timline-img lazyload">
                     </div>
 
                     <div class="timeline-body">
@@ -1069,13 +1031,8 @@
 
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="timeline-media">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/2023.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2023.jpg" alt=""
-                                class="timline-img lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2023.webp" alt=""
+                            class="timline-img lazyload">
                     </div>
 
                     <div class="timeline-body">
@@ -1095,13 +1052,8 @@
 
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="timeline-media">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/2024.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2024.jpg" alt=""
-                                class="timline-img lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2024.webp" alt=""
+                            class="timline-img lazyload">
                     </div>
 
                     <div class="timeline-body">
@@ -1138,197 +1090,122 @@
         <div class="album-slide">
             <div class="swiper-wrapper album">
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8309.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8309.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8309_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8309_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8309_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9629.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9629.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9629_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9629_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9629_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8577.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8577.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8577_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8577_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8577_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8728.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8728.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8728_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8728_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8728_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8867.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8867.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8867_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8867_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8867_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8742.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8742.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8742_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8742_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8742_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8979.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8979.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8979_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8979_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8979_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8924.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8924.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8924_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8924_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8924_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9001.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9001.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9001_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9001_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9001_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9043.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9043.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9043_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9043_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9043_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9255.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9255.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9255_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9255_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9255_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9616.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9616.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9616_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9616_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9616_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9514.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9514.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9514_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9514_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9514_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9362.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9362.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9362_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9362_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9362_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9554.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9554.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9554_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9554_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9554_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
             </div>
@@ -1391,9 +1268,9 @@
             <div class="video-container">
                 <div class="video-list">
                     <div class="video-item">
-                        <video controls preload="none"
-                            style="width: 100%; max-width: 768px; border-radius: 12px; box-shadow: 0 0 20px rgba(0 0 0 / 10%);"
-                            data-poster="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/0.jpg">
+                        <video controls preload="none" class="lazyload"
+                            data-poster="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/0.webp"
+                            style="width: 100%; max-width: 768px; border-radius: 12px; box-shadow: 0 0 20px rgba(0 0 0 / 10%);">
                             <source src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/video/propose.mp4"
                                 type="video/mp4">
                             Your browser does not support the HTML5 Video element.
@@ -1427,12 +1304,8 @@
 
             <div id="box-gift">
                 <div class="gift-qr">
-                    <picture>
-                        <source data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/bank.webp"
-                            type="image/webp">
-                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/bank.jpg" alt=""
-                            class="groom_qr lazyload" style="max-width:100%">
-                    </picture>
+                    <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/bank.webp" alt=""
+                        class="groom_qr lazyload" style="max-width:100%">
                 </div>
             </div>
         </div>
@@ -1450,197 +1323,122 @@
         <div class="album-slide">
             <div class="swiper-wrapper album">
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9394.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9394.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9394_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9394_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9394_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9736.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9736.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9736_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9736_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9736_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9541.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9541.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9541_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9541_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9541_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9205.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9205.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9205_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9205_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9205_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9289.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9289.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9289_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9289_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9289_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9067.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9067.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9067_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9067_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9067_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8968.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8968.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8968_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8968_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8968_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9134.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9134.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9134_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9134_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9134_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9473.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9473.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9473_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9473_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9473_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8659.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8659.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8659_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8659_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8659_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8829.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8829.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/8829_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8829_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8829_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9570.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9570.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9570_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9570_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9570_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9716.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9716.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9716_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9716_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9716_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9648.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9648.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9648_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9648_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9648_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
 
                 <div class="swiper-slide">
-                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9704.jpg"
+                    <a href="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9704.webp"
                         data-fancybox="gallery">
-                        <picture class="lazy">
-                            <source
-                                data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9704_1.webp"
-                                type="image/webp">
-                            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9704_1.jpg"
-                                alt="" style="object-position:center;" class="lazyload">
-                        </picture>
+                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9704_1.webp" alt=""
+                            style="object-position:center;" class="lazyload">
                     </a>
                 </div>
             </div>
@@ -1661,12 +1459,8 @@
         <div class="video-container">
             <div class="video-list">
                 <div class="video-item">
-                    <picture class="lazy">
-                        <source data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/card.webp"
-                            type="image/webp">
-                        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/card.png" alt=""
-                            class="lazyload">
-                    </picture>
+                    <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/card.webp" alt=""
+                        class="lazyload">
                 </div>
             </div>
         </div>
@@ -1677,12 +1471,8 @@
         <div class="uk-overlay uk-overlay-primary uk-position-cover">
         </div>
 
-        <picture class="thankyou-picture lazy">
-            <source data-srcset="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/rip/9433.webp"
-                type="image/webp">
-            <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9433.jpg" alt=""
-                class="thankyou-bg lazyload" style="object-position:center;">
-        </picture>
+        <img data-src="https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9433.webp" alt=""
+            class="thankyou-bg lazyload" style="object-position:center;">
 
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
             <h2 class="banner-title  script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
@@ -1708,26 +1498,31 @@
     <!-- END AUDIO -->
 
     <script>
+        // Ẩn cuộn khi modal đang hiển thị
         document.body.style.overflow = 'hidden';
 
+        // Lấy các phần tử DOM cần dùng
         const startBtn = document.getElementById('startButton');
         const audio = document.getElementById('audio');
         const welcomeModal = document.getElementById('welcome-modal');
         const toggleAudioBtn = document.querySelector('.toggleAudio');
         const toggleIcon = toggleAudioBtn?.querySelector('i');
 
+        // Bắt sự kiện nhấn nút Start
         if (startBtn) {
             startBtn.addEventListener('click', () => {
-                audio?.play();
-                
-                if (welcomeModal) welcomeModal.style.display = 'none';
+                audio?.play(); // Phát nhạc
 
-                document.body.style.overflow = 'auto';
+                if (welcomeModal) welcomeModal.style.display = 'none'; // Ẩn modal
+
+                document.body.style.overflow = 'auto'; // Bật cuộn
             });
         }
 
-        window.addEventListener('load', () => setTimeout(() => window.scrollTo(0, 0), 0));
+        // Đặt lại vị trí cuộn sau khi trang tải
+        window.addEventListener('load', () => window.scrollTo(0, 0));
 
+        // Xử lý video và âm thanh
         document.addEventListener('DOMContentLoaded', () => {
             const videos = document.querySelectorAll('video');
 
@@ -1738,14 +1533,14 @@
 
             videos.forEach((video) => {
                 video.addEventListener('play', () => {
-                    toggleAudioBtn.disabled = true;
-                    audio?.pause();
+                    toggleAudioBtn.disabled = true; // Vô hiệu hóa nút âm thanh khi video phát
+                    audio?.pause(); // Tạm dừng nhạc
                     updateAudioIcon(true);
                 });
 
                 video.addEventListener('pause', () => {
-                    toggleAudioBtn.disabled = false;
-                    audio?.play();
+                    toggleAudioBtn.disabled = false; // Bật lại nút âm thanh
+                    audio?.play(); // Phát nhạc
                     updateAudioIcon(false);
                 });
 
@@ -1755,82 +1550,141 @@
                     updateAudioIcon(false);
                 });
             });
+        });
 
-            if (window.location.hash) {
-                window.history.replaceState(null, null, window.location.pathname);
+        // Lazy load hình ảnh và video
+        document.addEventListener('lazybeforeunveil', function (e) {
+            const element = e.target;
+
+            if (element.dataset.bg) {
+                element.style.backgroundImage = `url(${element.dataset.bg})`;
             }
 
-            // Lazy loading for backgrounds
-            const lazyLoad = (elements, observerConfig, callback) => {
-                if ('IntersectionObserver' in window) {
-                    const observer = new IntersectionObserver((entries, observer) => {
-                        entries.forEach((entry) => {
-                            if (entry.isIntersecting) {
-                                callback(entry.target);
-                                observer.unobserve(entry.target);
-                            }
-                        });
-                    }, observerConfig);
-
-                    elements.forEach((element) => observer.observe(element));
-                } else {
-                    const fallback = () => {
-                        const scrollTop = window.scrollY;
-                        const windowHeight = window.innerHeight;
-
-                        elements.forEach((element) => {
-                            if (element.getBoundingClientRect().top < windowHeight + scrollTop + 500) {
-                                callback(element);
-                            }
-                        });
-                    };
-
-                    window.addEventListener('scroll', fallback);
-                    window.addEventListener('resize', fallback);
-                }
-            };
-
-            lazyLoad(
-                document.querySelectorAll('.lazy-bg'),
-                { rootMargin: '0px 0px 500px 0px' },
-                (element) => {
-                    const bgUrl = element.dataset.bg;
-
-                    if (bgUrl) element.style.backgroundImage = `url(${bgUrl})`;
-
-                    element.classList.remove('lazy-bg');
-                }
-            );
-
-            lazyLoad(
-                document.querySelectorAll('video[data-poster]'),
-                { rootMargin: '0px 0px 500px 0px' },
-                (video) => {
-                    const posterUrl = video.dataset.poster;
-
-                    if (posterUrl) video.poster = posterUrl;
-
-                    video.removeAttribute('data-poster');
-                }
-            );
-
-            lazyLoad(
-                document.querySelectorAll('.lazy'),
-                { rootMargin: '0px 0px 500px 0px' },
-                (picture) => {
-                    const source = picture.querySelector('source');
-                    const img = picture.querySelector('img');
-
-                    if (source) source.srcset = source.dataset.srcset;
-                    if (img) img.src = img.dataset.src;
-
-                    picture.classList.remove('lazy');
-                }
-            );
+            if (element.tagName === 'VIDEO' && element.dataset.poster) {
+                element.poster = element.dataset.poster;
+            }
         });
-    </script>
 
-    <script>
+        // Tải tuần tự các tài nguyên
+        const resources = [
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9115.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/audio/ido.mp3",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9451.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9636.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9267.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9667.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8772.webp",
+            //
+            "wp-content/pic/1.png",
+            "wp-content/pic/2.png",
+            "wp-content/pic/3.png",
+            "wp-content/pic/4.png",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8430.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2020.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2021.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2022.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2023.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/2024.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8309_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9629_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8577_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8728_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8867_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8742_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8979_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8924_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9001_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9043_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9255_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9616_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9514_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9362_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9554_1.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/0.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/video/propose.mp4",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/bank.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9394_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9736_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9541_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9205_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9289_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9067_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8968_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9134_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9473_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8659_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8829_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9570_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9716_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9648_1.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9704_1.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/card.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9433.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8309.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9629.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8577.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8728.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8867.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8742.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8979.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8924.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9001.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9043.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9255.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9616.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9514.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9362.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9554.webp",
+            //
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9394.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9736.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9541.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9205.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9289.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9067.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8968.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9134.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9473.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8659.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/8829.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9570.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9716.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9648.webp",
+            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9704.webp",
+        ];
+
+        function loadResourceSequentially(index = 0) {
+            if (index >= resources.length) return;
+
+            const link = document.createElement('link');
+
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = resources[index];
+
+            link.onload = () => loadResourceSequentially(index + 1);
+            link.onerror = () => loadResourceSequentially(index + 1);
+
+            document.head.appendChild(link);
+        }
+
+        loadResourceSequentially(); // Bắt đầu tải tài nguyên
+
+        // Đặt cookie với SameSite và Secure
         document.cookie = "username=John Doe; SameSite=Lax; Secure";
     </script>
 
