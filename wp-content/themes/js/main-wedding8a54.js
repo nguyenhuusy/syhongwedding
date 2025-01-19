@@ -24,7 +24,6 @@ var swiper1 = new Swiper(".album-slide", {
 
 // FANCY BOX
 Fancybox.bind("[data-fancybox]", {
-
 });
 
 //AUDIO
