@@ -456,7 +456,7 @@
                 Welcome to Our Wedding!
             </h2>
             <p style="font-size: 16px; margin-bottom: 30px; font-family: 'Georgia', serif;">
-                Thank you for celebrating this special day with us. Click "Start" to begin the journey.
+                Thanks for celebrating this special day with us. Click 'Start' to begin the journey.
             </p>
             <button id="startButton"
                 style="padding: 12px 25px; font-size: 18px; color: white; background: #d6336c; border: none; border-radius: 5px; cursor: pointer; font-family: 'Arial', sans-serif;">
@@ -1498,31 +1498,26 @@
     <!-- END AUDIO -->
 
     <script>
-        // Ẩn cuộn khi modal đang hiển thị
         document.body.style.overflow = 'hidden';
 
-        // Lấy các phần tử DOM cần dùng
         const startBtn = document.getElementById('startButton');
         const audio = document.getElementById('audio');
         const welcomeModal = document.getElementById('welcome-modal');
         const toggleAudioBtn = document.querySelector('.toggleAudio');
         const toggleIcon = toggleAudioBtn?.querySelector('i');
 
-        // Bắt sự kiện nhấn nút Start
+        window.addEventListener('load', () => window.scrollTo(0, 0));
+
         if (startBtn) {
             startBtn.addEventListener('click', () => {
-                audio?.play(); // Phát nhạc
+                audio?.play();
 
-                if (welcomeModal) welcomeModal.style.display = 'none'; // Ẩn modal
+                if (welcomeModal) welcomeModal.style.display = 'none';
 
-                document.body.style.overflow = 'auto'; // Bật cuộn
+                document.body.style.overflow = 'auto';
             });
         }
 
-        // Đặt lại vị trí cuộn sau khi trang tải
-        window.addEventListener('load', () => window.scrollTo(0, 0));
-
-        // Xử lý video và âm thanh
         document.addEventListener('DOMContentLoaded', () => {
             const videos = document.querySelectorAll('video');
 
@@ -1533,14 +1528,14 @@
 
             videos.forEach((video) => {
                 video.addEventListener('play', () => {
-                    toggleAudioBtn.disabled = true; // Vô hiệu hóa nút âm thanh khi video phát
-                    audio?.pause(); // Tạm dừng nhạc
+                    toggleAudioBtn.disabled = true;
+                    audio?.pause();
                     updateAudioIcon(true);
                 });
 
                 video.addEventListener('pause', () => {
-                    toggleAudioBtn.disabled = false; // Bật lại nút âm thanh
-                    audio?.play(); // Phát nhạc
+                    toggleAudioBtn.disabled = false;
+                    audio?.play();
                     updateAudioIcon(false);
                 });
 
@@ -1552,7 +1547,6 @@
             });
         });
 
-        // Lazy load hình ảnh và video
         document.addEventListener('lazybeforeunveil', function (e) {
             const element = e.target;
 
@@ -1565,12 +1559,8 @@
             }
         });
 
-        // Tải tuần tự các tài nguyên
         const resources = [
-            //
             "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9115.webp",
-            //
-            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/audio/ido.mp3",
             //
             "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9451.webp",
             "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9636.webp",
@@ -1610,7 +1600,6 @@
             "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/9554_1.webp",
             //
             "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/0.webp",
-            "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/video/propose.mp4",
             //
             "https://s3.ap-southeast-1.amazonaws.com/tynab.wedding/image/bank.webp",
             //
@@ -1682,9 +1671,8 @@
             document.head.appendChild(link);
         }
 
-        loadResourceSequentially(); // Bắt đầu tải tài nguyên
+        loadResourceSequentially();
 
-        // Đặt cookie với SameSite và Secure
         document.cookie = "username=John Doe; SameSite=Lax; Secure";
     </script>
 
